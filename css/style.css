@@ -1,15 +1,37 @@
+/* >= 1440px: desktop amplio (tu diseño base de escritorio) */
+@media (min-width: 1440px) {
+    body {
+      max-width: 1200px;
+    }
+  }
+/* >= 480px: teléfonos grandes */
+@media (min-width: 480px) {
+    body {
+      font-size: 17px;
+    }
+  }
+
+  
+
+
+html{
+    font-size: 16px;
+}
 
 :root {
     --White: hsl(0, 0%, 100%);
     --Slate-300:hsl(212, 45%, 89%);
     --Slate-500: hsl(216, 15%, 48%);
     --Slate-900:hsl(218, 44%, 22%);
+    --Black:hsl(0, 2%, 10%);
 }
 
 body {
     font-family: 'Outfit', sans-serif;
     background-color: var(--Slate-300);
     margin: 0;
+    padding: 0;
+    font-size: 1rem;
 }
 
 .container {
@@ -20,31 +42,34 @@ body {
 }
 .card{
     background-color: var(--White);
-    width: 300px;
-    border-radius: 25px;
-    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    width: 16em;
+    border-radius: 18px;
+    /*box-shadow: 0 5px 25px var(--Black);*/
+    /*padding: 20px;*/
+    padding: calc(.4em + 10px);
     box-sizing: border-box;
     text-align: center;
-    margin-left: 10px;
+   /* margin-left: 10px;*/
+   margin-inline-start: 11em;
+    
 }
 .card img {
     width: 100%;
     border-radius: 15px;
 }
 .card h1 {
-    font-size: 22px;
+    font-size: 1.2rem;
     color: var(--Slate-900);            
     margin: 20px 0 10px 0;
 }           
 .card p {
-    font-size: 14px;
+    font-size: .8rem;
     color: var(--Slate-500);
     line-height: 1.5;
-    margin: 0;
+    margin: 1em;
 }
 .attribution { 
-    font-size: 11px; text-align: center; 
+    font-size: 1rem; text-align: center; 
 }
 
 .attribution a { 
